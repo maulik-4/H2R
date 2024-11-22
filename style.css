@@ -1,0 +1,168 @@
+@font-face {
+    font-family: gilroy;
+    src: url(Fonts/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: gilroy-bold;
+    src: url(Fonts/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: kajiro;
+    src: url(Fonts/Kajiro.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+}
+
+.back img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.front {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.front .work-space {
+    position: relative;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 3vh 0;
+}
+
+.work-space .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-left img {
+    width: 100px;
+    filter: invert(10);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 13px;
+    font-family: gilroy;
+    font-weight: 600;
+    pointer-events: all;
+}
+
+.navbar .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.elem-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-top: 5vh;
+}
+
+.elem-container .sub-left {
+    min-width: 50%;
+    font-family: kajiro;
+}
+
+.sub-left .elems {
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+}
+
+.sub-left .elems h1 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    font-size: 11vw;
+    line-height: .85;
+}
+
+.sub-left .elems h1:nth-child(1) {
+    top: 0%;
+}
+
+.sub-left button {
+    background-color: #fff;
+    border: none;
+    font-size: 3vw;
+    color: #000;
+    font-family: kajiro;
+    padding: 1vh 4vw;
+    margin-top: 3vh;
+    pointer-events: all;
+}
+
+.elem-container .sub-right {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sub-right p {
+    width: 100%;
+    font-size: .9vw;
+    font-family: gilroy;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.sub-right p:nth-child(3) {
+    margin-bottom: 50px;
+}
+
+.sub-right .image-box {
+    width: 90%;
+    height: 30%;
+    background-image: url(images/logo.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+    border-radius: 10px;
+}
